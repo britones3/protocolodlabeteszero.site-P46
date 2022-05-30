@@ -2,9 +2,7 @@
 <html lang="pt-br">
   <head>
 
-<meta name="facebook-domain-verification" content="qdoc56tkcyto9spxqqzt2v9l3urw2q" />
-
-<!-- Meta Pixel Code -->
+ <!-- Meta Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,17 +12,17 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '994855341232179');
-fbq('init', '987872115251164');
+  fbq('init', '481761820392783');
 fbq('init', '3249187548731155');
-fbq('init', '300661058945911');
-fbq('init', '2138927469611636');
 fbq('init', '553138486173376');
+fbq('init', '2138927469611636');
+fbq('init', '300661058945911');
+fbq('init', '987872115251164');
 fbq('init', '731728294856373');
   fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=994855341232179&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=481761820392783&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
@@ -55,6 +53,79 @@ fbq('init', '731728294856373');
     </style>
 
   </head>
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '731728294856373');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=731728294856373&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+
+      $.ajax({
+        url: "https://geolocation-db.com/jsonp",
+        jsonpCallback: "callback",
+        dataType: "jsonp",
+        success: function (location) {
+          var data = new Date(),
+            dia = data.getDate().toString().padStart(2, '0'),
+            mes = (data.getMonth() + 1).toString().padStart(2, '0'), //+1 pois no getMonth Janeiro começa com zero.
+            ano = data.getFullYear();
+          
+          data = dia + '/' + mes + '/' + ano;
+
+          //AQUI altera o texto ANTES do nome da cidade
+          textoAntesCidade = 'Você e algumas pessoas próximo a ';
+          //AQUI altera o texto DEPOIS do nome da cidade
+          textoDepoisCidade = ' foram selecionadas para ver este vídeo até o dia ';
+
+          mostrarData = true; //SE não quiser que a data apareça é só mudar o valor 'true' para 'false' e vice-versa para mostrar novamente 
+          
+          if(location.city)
+            $('#container-cidade').html(textoAntesCidade + location.city + textoDepoisCidade + (mostrarData ? data : ''));
+        }
+      });
+    });
+  </script>
+  <style>
+    #container-cidade {
+      padding: 1rem;
+      width: 100%;
+      /* AQUI altera a cor de fundo da caixa */
+      background-color: #000000;
+      /* AQUI altera a cor da letra */
+      color: #FFFFFF;
+      display: inline-table;
+      /* AQUI altera o tamanho da letra */
+      font-size: 15px;
+      /* AQUI altera a altura da caixa */
+      height: 8px;
+      z-index: 1;
+      position: inherit;
+      top: 0;
+      left: 0;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<div id="container-cidade">Aguarde um momento...</div>
+
   <body>
     
     <header class="py-4">
@@ -65,7 +136,7 @@ fbq('init', '731728294856373');
             <img class="img-fluid" src=>
 
             <!-- Headline -->
-            <h3 class="my-4"><b>Descoberta Revolucionária Está Revertendo a Diabetes em Milhares de Brasileiros</b></h3>
+            <h3 class="my-4"><b>''Depois de 2 SEMANAS Que Eu Comecei a Tomar Aquela Vitamina de Morango, Minha Glicose Caiu de 150 Para 95…''</b></h3>
 
             <!-- VSL -->
            <script type="text/javascript" id="scr_624e403434cf0a0009b63ad4">var s=document.createElement("script");s.src="https://cdn.converteai.net/bc15f8ab-e6a8-4702-8515-8add848302ba/players/624e403434cf0a0009b63ad4/player.js",s.async=!0,document.head.appendChild(s);</script>
